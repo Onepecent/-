@@ -59,7 +59,7 @@ Reduce函数也是由用户所编写。它接受一个中间键以及该键的�
     执行概述
 通过将传入Map函数的输入数据自动切分为M个数据片段的集合，这样就能将Map操作分布到多台机器上运行。输入数据的片段可以在不同的机器上进行并行处理。使用分区函数将Map函数所生成的中间key值分成R个不同分区（例如，hash(key) mod R），这样就可以将Reduce操作也分布到多台机器上并行处理。分区数量R和分区函数则是由用户指定。
 ```
-![Alt text](image.png)
+![image](https://github.com/Onepecent/-/blob/main/figure1.png)
 
 ## figure1
 ```
